@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Tell Us More About You!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style-2.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+ function dynInput(cbox) {
+  if (cbox.checked) {
+    var input = document.createElement("input");
+    input.type = "number";
+    var div = document.createElement("div");
+    div.id = cbox.name;
+    div.innerHTML = "Please Rate" + cbox.name;
+    div.appendChild(input);
+    document.getElementById("insertinputs").appendChild(div);
+  } else {
+    document.getElementById(cbox.name).remove();
+  }
+}
+</script>
+</head>
+<body class="blurBg-true" style="background-color:#EBEBEB">
+
+
+
+<!-- Start Formoid form-->
+
+<header style="height: 100px; background: #E9E7E8">
+		<div style="padding: 15px">
+		<div>
+			<a href="index.html">
+				<img src="images/big-red-den.svg" height="70"></a>
+		</div>
+		</div>
+
+	</header>
+<form class="formoid-metro-red" style="background-color:#363636;font-size:15px;font-family:Arial,Helvetica,sans-serif;
+	         color:#ffffff;max-width:700px;min-width:150px; margin-top: 50px;" action="ratings.php" method="post">
+	      <div class="title">
+    <h2>Tell Us More About You!</h2>
+ 		<h3 style="padding-left:30px; font-weight:1">Please give classes a rating from 1 to 5.</h3>
+	</div>
+	<div class="element-radio">
+        <label class="title" style=" font-size: 20px; color:#f42e4e">Year<span class="required">*</span>
+        </label>
+        <div class="column column2">
+            <label><input type="radio" name="radio" value="Freshman" required="required"><span>Freshman</span></label>
+            <label><input type="radio" name="radio" value="Junior" required="required"><span>Junior</span></label>
+        </div>
+
+        <span class="clearfix"></span>
+
+
+		<div class="column column2">
+            <label>
+            <input type="radio" name="radio" value="Sophomore" required="required">
+            <span>Sophomore</span>
+            </label><label>
+            <input type="radio" name="radio" value="Senior" required="required">
+            <span>Senior</span></label></div><span class="clearfix"></span>
+		</div>
+
+
+
+		<div class="element-checkbox"><label class="title" style=" font-size: 20px; color:#f42e4e">Introductory Classes</label>
+			<div class="column column4">
+				<label>
+				<input type="checkbox" name="checkbox[]" value="CS 1110" onchange="chkbx(1110)">
+				<span>CS 1110</span></label>
+          <p id="p1110" style="visibility: hidden">Rating:
+          <input name="intros[]" type="number" id="n1110" min="1" max="5" style="visibility: hidden; color:black">
+          </p>
+			</div>
+				<span class="clearfix"></span>
+		<div class="column column4">
+			<input type="checkbox" name="checkbox[]" value="CS 1112" onchange="chkbx(1112)">
+			<span>CS 1112</span>
+			<p id="p1112" style="visibility: hidden">Rating:
+			<input name="intros[]" type="number" id="n1112" min="1" max="5" style="visibility: hidden; color:black">
+			</p>
+			</div>
+			<span class="clearfix"></span>
+		<div class="column column4">
+			<label>
+				<input type="checkbox" name="checkbox[]" value="CS 2110" onchange="chkbx(2110)">
+				<span>CS 2110</span></label>
+				<p id="p2110" style="visibility: hidden">Rating:
+		    <input name="intros[]" type="number" id="n2110" min="1" max="5" style="visibility: hidden; color:black">
+				</p>
+			</div>
+			<span class="clearfix"></span>
+		<div class="column column4"><label>
+			<input type="checkbox" name="checkbox[]" value="CS 2112" onchange="chkbx(2112)">
+			<span>CS 2112</span></label>
+			<p id="p2112" style="visibility: hidden">Rating:
+			<input name="intros[]" type="number" id="n2112" min="1" max="5" style="visibility: hidden; color:black">
+			</p>
+			</div><span class="clearfix"></span>
+		</div>
+
+	<div class="element-checkbox"><label class="title" style=" font-size: 20px; color:#f42e4e">The Core</label>
+		<div class="column column3"><label>
+			<input type="checkbox" name="checkbox1[]" value="CS 3410" onchange="chkbx(3410)">
+			<span>CS 3410</span></label>
+          <p id="p3410" style="visibility: hidden">Rating:
+          <input name="cores[]" type="number" id="n3410" min="1" max="5" style="visibility: hidden; color:black">
+          </p>
+			<p id="insertinputs"></p>
+			<label>
+      <input type="checkbox" name="checkbox1[]" value="CS 3420" onchange="chkbx(3420)">
+			<span>CS 3420</span></label>
+        <p id="p3420" style="visibility: hidden">Rating:
+        <input name="cores[]" type="number" id="n3420" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+			</div>
+			<span class="clearfix"></span>
+
+		<div class="column column3"><label>
+			<input type="checkbox" name="checkbox1[]" value="CS 2800" onchange="chkbx(2800)">
+			<span>CS 2800</span></label>
+        <p id="p2800" style="visibility: hidden">Rating:
+        <input name="cores[]" type="number" id="n2800" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <p></p>
+			<label>
+			<input type="checkbox" name="checkbox1[]" value="CS 4410" onchange="chkbx(4410)">
+			<span>CS 4410</span></label>
+        <p id="p4410" style="visibility: hidden">Rating:
+        <input name="cores[]" type="number" id="n4410" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+			</div>
+			<span class="clearfix"></span>
+
+		<div class="column column3"><label>
+      <input type="checkbox" name="checkbox1[]" value="CS 3110" onchange="chkbx(3110)">
+			<span>CS 3110</span></label>
+        <p id="p3110" style="visibility: hidden">Rating:
+        <input name="cores[]" type="number" id="n3110" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <input type="checkbox" name="checkbox1[]" value="CS 4820" onchange="chkbx(4820)">
+			<span>CS 4820</span>
+			<p id="p4820" style="visibility: hidden">Rating:
+			<input name="cores[]" type="number" id="n4820" min="1" max="5" style="visibility: hidden; color:black">
+			</p>
+			</div>
+			<span class="clearfix"></span>
+    </div>
+<!--
+
+    CHANGING TO PRAC
+-->
+<div class="element-checkbox"><label class="title" style=" font-size: 20px; color:#f42e4e">The Prac</label>
+    <div class="column column3">
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4121" onchange="chkbx(4121)">
+      <span>CS 4121</span></label>
+        <p id="p4121" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4121" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4621" onchange="chkbx(4621)">
+      <span>CS 4621</span></label>
+        <p id="p4621" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4621" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5150" onchange="chkbx(5150)">
+      <span>CS 5150</span></label>
+        <p id="p5150" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5150" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5431" onchange="chkbx(5431)">
+      <span>CS 5431</span></label>
+        <p id="p5431" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5431" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+    </div>
+    <span class="clearfix"></span>
+    <div class="column column3">
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4321" onchange="chkbx(4321)">
+      <span>CS 4321</span></label>
+        <p id="p4321" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4321" min="1" max="5" style="visibility: hidden; color: black;">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4701" onchange="chkbx(4701)">
+      <span>CS 4701</span></label>
+        <p id="p4701" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4701" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5412" onchange="chkbx(5412)">
+      <span>CS 5412</span></label>
+        <p id="p5412" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5412" min="1" max="5" style="visibility: hidden; color: black;">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5625" onchange="chkbx(5625)">
+      <span>CS 5625</span></label>
+        <p id="p5625" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5625" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+    </div>
+    <span class="clearfix"></span>
+		<div class="column column3">
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4411" onchange="chkbx(4411)">
+      <span>CS 4411</span></label>
+        <p id="p4411" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4411" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 4758" onchange="chkbx(4758)">
+      <span>CS 4758</span></label>
+        <p id="p4758" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n4758" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5414" onchange="chkbx(5414)">
+      <span>CS 5414</span></label>
+        <p id="p5414" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5414" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+      <label><input type="checkbox" name="checkbox2[]" value="CS 5643" onchange="chkbx(5643)">
+      <span>CS 5643</span></label>
+        <p id="p5643" style="visibility: hidden">Rating:
+        <input name="pracs[]" type="number" id="n5643" min="1" max="5" style="visibility: hidden; color:black">
+        </p>
+    </div><span class="clearfix"></span>
+</div>
+	<div class="element-checkbox"><label class="title" style=" font-size: 20px; color:#f42e4e"> Electives Completed:</label>
+		<div class="column column3">
+		<label><input type="checkbox" name="checkbox3[]" value="CS 4300" onchange="chkbx(4300)">
+			<span>CS 4300</span></label>
+				<p id="p4300" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4300" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4700" onchange="chkbx(4700)">
+			<span>CS 4700</span></label>
+				<p id="p4700" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4700" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4732" onchange="chkbx(4732)">
+			<span>CS 4732</span></label>
+				<p id="p4732" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4732" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4740" onchange="chkbx(4740)">
+			<span>CS 4740</span></label>
+				<p id="p4740" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4740" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4780" onchange="chkbx(4780)">
+			<span>CS 4780</span></label>
+				<p id="p4780" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4780" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4786" onchange="chkbx(4786)">
+			<span>CS 4786</span></label>
+				<p id="p4786" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4786" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5786" onchange="chkbx(5786)">
+			<span>CS 5786</span></label>
+				<p id="p5786" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5786" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 2770" onchange="chkbx(2770)">
+			<span>CS 2770</span></label>
+				<p id="p2770" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n2770" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4210" onchange="chkbx(4210)">
+			<span>CS 4210</span></label>
+				<p id="p4210" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4210" min="1" max="5" style="visibility: hidden; color:black">
+				</p>
+			<label><input type="checkbox" name="checkbox3[]" value="CS 4220" onchange="chkbx(4220)">
+			<span>CS 4220</span></label>
+				<p id="p4220" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4220" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4744" onchange="chkbx(4744)">
+			<span>CS 4744</span></label>
+				<p id="p4744" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4744" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4775" onchange="chkbx(4775)">
+			<span>CS 4775</span></label>
+				<p id="p4775" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4775" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 3152" onchange="chkbx(3152)">
+			<span>CS 3152</span></label>
+				<p id="p3152" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n3152" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4152" onchange="chkbx(4152)">
+			<span>CS 4152</span></label>
+				<p id="p4152" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4152" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4154" onchange="chkbx(4154)">
+			<span>CS 4154</span></label>
+				<p id="p4154" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4154" min="1" max="5" style="visibility: hidden; color:black">
+				</p>
+				</div><div class="column column3">
+				<label><input type="checkbox" name="checkbox3[]" value="CS 4620" onchange="chkbx(4620)">
+			<span>CS 4620</span></label>
+				<p id="p4620" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4620" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4654" onchange="chkbx(4654)">
+			<span>CS 4654</span></label>
+				<p id="p4654" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4654" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 2850" onchange="chkbx(2850)">
+			<span>CS 2850</span></label>
+				<p id="p2850" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n2850" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label>
+				<input type="checkbox" name="checkbox3[]" value="CS 4852" onchange="chkbx(4852)">
+			<span>CS 4852</span></label>
+				<p id="p4852" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4852" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4450" onchange="chkbx(4450)">
+			<span>CS 4450</span></label>
+				<p id="p4450" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4450" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 2024" onchange="chkbx(2024)">
+			<span>CS 2024</span></label>
+				<p id="p2024" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n2024" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 2043" onchange="chkbx(2043)">
+			<span>CS 2043</span></label>
+				<p id="p2043" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n2043" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4120" onchange="chkbx(4120)">
+			<span>CS 4120</span></label>
+				<p id="p4120" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4120" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4860" onchange="chkbx(4860)">
+			<span>CS 4860</span></label>
+				<p id="p4860" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4860" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 2048" onchange="chkbx(2048)">
+			<span>CS 2048</span></label>
+				<p id="p2048" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n2048" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 3300" onchange="chkbx(3300)">
+			<span>CS 3300</span></label>
+				<p id="p3300" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n3300" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4320" onchange="chkbx(4320)">
+			<span>CS 4320</span></label>
+				<p id="p4320" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4320" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label>
+				<input type="checkbox" name="checkbox3[]" value="CS 4830" onchange="chkbx(4830)">
+			<span>CS 4830</span></label>
+				<p id="p4830" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4830" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4810" onchange="chkbx(4810)">
+			<span>CS 4810</span></label>
+				<p id="p4810" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4810" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4812" onchange="chkbx(4812)">
+			<span>CS 4812</span></label>
+				<p id="p4812" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4812" min="1" max="5" style="visibility: hidden; color:black">
+				</p>
+				</div>
+				<div class="column column3">
+				<label><input type="checkbox" name="checkbox3[]" value="CS 4850" onchange="chkbx(4850)">
+			<span>CS 4850</span></label>
+				<p id="p4850" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4850" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 3758" onchange="chkbx(3758)">
+			<span>CS 3758</span></label>
+				<p id="p3758" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n3758" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4670" onchange="chkbx(4670)">
+			<span>CS 4670</span></label>
+				<p id="p4670" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4670" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4750" onchange="chkbx(4750)">
+			<span>CS 4750</span></label>
+				<p id="p4750" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4750" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4752" onchange="chkbx(4752)">
+			<span>CS 4752</span></label>
+				<p id="p4752" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4752" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 4754" onchange="chkbx(4754)">
+			<span>CS 4754</span></label>
+				<p id="p4754" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4754" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label>
+			<input type="checkbox" name="checkbox3[]" value="CS 4420" onchange="chkbx(4420)">
+			<span>CS 4420</span></label>
+				<p id="p4420" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n4420" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5114" onchange="chkbx(5114)">
+			<span>CS 5114</span></label>
+				<p id="p5114" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5114" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5412" onchange="chkbx(5412)">
+			<span>CS 5412</span></label>
+				<p id="p5412" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5412" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5413" onchange="chkbx(5413)">
+			<span>CS 5413</span></label>
+				<p id="p5413" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5413" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5150" onchange="chkbx(5150)">
+			<span>CS 5150</span></label>
+				<p id="p5150" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5150" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5152" onchange="chkbx(5152)">
+			<span>CS 5152</span></label>
+				<p id="p5152" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5152" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5220" onchange="chkbx(5220)">
+			<span>CS 5220</span></label>
+				<p id="p5220" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5220" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5300" onchange="chkbx(5300)">
+			<span>CS 5300</span></label>
+				<p id="p5300" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5300" min="1" max="5" style="visibility: hidden; color:black">
+				</p><label><input type="checkbox" name="checkbox3[]" value="CS 5420" onchange="chkbx(5420)">
+			<span>CS 5420</span></label>
+				<p id="p5420" style="visibility: hidden">Rating:
+				<input name="elecs[]" type="number" id="n5420" min="1" max="5" style="visibility: hidden; color:black">
+				</p>
+			</div>
+	</div>
+	<div class="element-checkbox">
+        <label class="title" style=" font-size: 20px; color:#f42e4e">Clubs</label>
+        <div class="column column3">
+            <label><input type="checkbox" name="checkbox4[]" value="ACSU"><span>ACSU</span></label>
+            <label><input type="checkbox" name="checkbox4[]" value="Cornell Data Science"><span>Cornell Data Science</span></label>
+        </div><span class="clearfix"></span>
+		<div class="column column3"><label><input type="checkbox" name="checkbox4[]" value="WICC"><span>WICC</span></label><label><input type="checkbox" name="checkbox3[]" value="Cornell Open Source"><span>Cornell Open Source</span></label></div><span class="clearfix"></span>
+		<div class="column column3"><label><input type="checkbox" name="checkbox4[]" value="URMC"><span>URMC</span></label><label><input type="checkbox" name="checkbox3[]" value="Cornell App Development"><span>Cornell App Development</span></label></div><span class="clearfix"></span>
+</div>
+<div class="element-checkbox">
+        <label class="title" style=" font-size: 20px; color:#f42e4e">Goals</label>
+        <div class="column column3">
+            <label><input type="radio" name="radio1" value="Industry"><span>Industry</span></label>
+        </div><span class="clearfix"></span>
+		<div class="column column3">
+            <label><input type="radio" name="radio1" value="Grad">
+            <span>Graduate</span></label>
+
+    </div><span class="clearfix"></span>
+		<div class="column column3"><label><input type="radio" name="radio1" value="Undecided"><span>Undecided</span></label>
+    </div><span class="clearfix"></span>
+</div>
+	<div class="submit">
+		<input type="submit" value="Submit" name="submit">
+	</div>
+    </form>
+
+		<script>
+		function chkbx(NUM) {
+				var x = document.getElementById("n"+NUM);
+				var y = document.getElementById("p"+NUM);
+					if (x.style.visibility === "hidden") {
+						x.style.visibility = "visible";
+					}
+					else {
+						x.style.visibility = "hidden";
+					}
+					if (y.style.visibility === "hidden") {
+						y.style.visibility = "visible";
+					}
+					else {
+						y.style.visibility = "hidden";
+					}
+		}
+		</script>
+
+    <script type="text/javascript" src="jscript.js"></script>
+<!-- Stop Formoid form-->
+
+
+</body>
+</html>

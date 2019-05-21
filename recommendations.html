@@ -1,0 +1,401 @@
+<html>
+      <script language = "javascript" type = "text/javascript"
+       src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+
+  <script type = "text/javascript">
+    jQuery.ajax({
+    type: "POST",
+    url: 'in_form.php',
+    dataType: 'json',
+    data: {functionname: 'add', arguments: [1, 2]},
+
+    success: function (obj, textstatus) {
+                  if( !('error' in obj) ) {
+                      yourVariable = obj.result;
+                  }
+                  else {
+                      console.log(obj.error);
+                  }
+            }
+    });
+</script>
+<script>
+ function simlikes(){
+  $(function ()
+  {
+     $.ajax({
+  	      url: 'in_form.php',
+          method: 'POST',
+          data: "data_type=likes",
+          //dataType: 'json',
+          success: function(data)
+          {
+            //alert(data);
+            CreateTableFromJSON(JSON.parse(data));
+          },
+  	      error: function(err)
+          {
+            alert("error: "+JSON.stringify(err))
+          }
+        });
+  });
+}
+function simdlikes(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=dislikes",
+         //dataType: 'json',
+         success: function(data)
+         {
+             //alert(data)
+             CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+function simvector(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=vector",
+         //dataType: 'json',
+         success: function(data)
+         {
+           //alert(data)
+           CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+function simgoals(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=goals",
+         //dataType: 'json',
+         success: function(data)
+         {
+           //alert(data);
+           CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+function ptclasses(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=classes",
+         //dataType: 'json',
+         success: function(data)
+         {
+           //alert(data);
+           CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+function mentors(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=mentors",
+         //dataType: 'json',
+         success: function(data)
+         {
+           //alert(data);
+           CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+function smclub(){
+ $(function ()
+ {
+    $.ajax({
+         url: 'in_form.php',
+         method: 'POST',
+         data: "data_type=clubs",
+         //dataType: 'json',
+         success: function(data)
+         {
+          //alert(data);
+          CreateTableFromJSON(JSON.parse(data));
+         },
+         error: function(err)
+         {
+           alert("error: "+JSON.stringify(err))
+         }
+       });
+ });
+}
+</script>
+
+    <script>
+
+    //precondition: myUsers is a json string that is of the correct format specified below
+            
+    function CreateTableFromJSON(myUsers) {
+
+    // var myUsers = [
+    //          {"netid":"sec295","name":"Sofia Carrillo","year":"Junior","likes":["1110","2800","3410"],"dislikes":["2110","3110"],"vector":"Artificial Intelligence","clubs":["Underrepresented Minorities in Computing"],"goals":["Industry"]},
+    //              {"netid":"jpt86","name":"John Trujillo","year":"Junior","likes":["1110","2800","2110"],"dislikes":["2300","3110"],"vector":"Theory","clubs":["Underrepresented Minorities in Computing"],"goals":["Industry"]}
+    //          ]
+        var col = [];
+        for (var i = 0; i < myUsers.length; i++) {
+            for (var key in myUsers[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < myUsers.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = myUsers[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+    }
+        var elem = document.querySelector('#showData');
+
+        // Set color to purple
+        elem.style.color = 'purple';
+
+        var style = document.createElement('style');
+        style.innerHTML =
+    'td {' +
+        'color: purple;' +
+        'background-color: #e5e5e5;' +
+    '}';
+        // Get the first script tag
+var ref = document.querySelector('script');
+
+// Insert our new styles before the first script tag
+ref.parentNode.insertBefore(style, ref);
+</script>
+</html>
+<head>
+    <title>Convert JSON Data to HTML Table Example</title>
+
+</head>
+<body>
+    <style>@import "compass/css3";
+
+/*
+
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+
+*/
+
+// Default options for table style
+$table-breakpoint: 480px;
+$table-background-color: #FFF;
+$table-text-color: #024457;
+$table-outer-border: 1px solid #167F92;
+$table-cell-border: 1px solid #D9E4E6;
+
+// Extra options for table style (parse these arguments when including your mixin)
+$table-border-radius: 10px;
+$table-highlight-color: #EAF3F3;
+$table-header-background-color: #167F92;
+$table-header-text-color: #FFF;
+$table-header-border: 1px solid #FFF;
+
+// The Responstable mixin
+
+@mixin responstable(
+  $breakpoint: $table-breakpoint,
+  $background-color: $table-background-color,
+  $text-color: $table-text-color,
+  $outer-border: $table-outer-border,
+  $cell-border: $table-cell-border,
+  $border-radius: none,
+  $highlight-color: none,
+  $header-background-color: $table-background-color,
+  $header-text-color: $table-text-color,
+  $header-border: $table-cell-border) {
+
+  #showData {
+    margin: 1em 0;
+    width: 100%;
+    overflow: hidden;
+    background: $background-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    border: $outer-border;
+
+    tr {
+      border: $cell-border;
+      &:nth-child(odd) { // highlight the odd rows with a color
+        background-color: $highlight-color;
+      }
+    }
+
+    th {
+      display: none; // hide all the table header for mobile
+      border: $header-border;
+      background-color: $header-background-color;
+      color: $header-text-color;
+      padding: 1em;
+      &:first-child { // show the first table header for mobile
+        display: table-cell;
+        text-align: center;
+      }
+      &:nth-child(2) { // show the second table header but replace the content with the data-th from the markup for mobile
+        display: table-cell;
+        span {display:none;}
+        &:after {content:attr(data-th);}
+      }
+      @media (min-width: $breakpoint) {
+        &:nth-child(2) { // hide the data-th and show the normal header for tablet and desktop
+          span {display: block;}
+          &:after {display: none;}
+        }
+      }
+    }
+
+    td {
+      display: block; // display the table data as one block for mobile
+      word-wrap: break-word;
+      max-width: 7em;
+      &:first-child {
+        display: table-cell; // display the first one as a table cell (radio button) for mobile
+        text-align: center;
+        border-right: $cell-border;
+      }
+      @media (min-width: $breakpoint) {
+        border: $cell-border;
+      }
+    }
+
+    th, td {
+      text-align: left;
+      margin: .5em 1em;
+      @media (min-width: $breakpoint) {
+        display: table-cell; // show the table as a normal table for tablet and desktop
+        padding: 1em;
+      }
+    }
+  }
+}
+
+// Include the mixin (with extra options as overrides)
+
+@include responstable(
+  $border-radius: $table-border-radius,
+  $highlight-color: $table-highlight-color,
+  $header-background-color: $table-header-background-color,
+  $header-text-color: $table-header-text-color,
+  $header-border: $table-header-border);
+
+// General styles
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+  span {color: #167F92;}
+}</style>
+
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div data-brackets-id="432" class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 data-brackets-id="433" class="w3-bar-item">Click to Specify</h3>
+  <a data-brackets-id="434" href="#" class="w3-bar-item w3-button" onclick = "simlikes()">Similar Likes</a>
+  <a data-brackets-id="435" href="#" class="w3-bar-item w3-button" onclick = "simdlikes()">Similar Dislikes</a>
+  <a data-brackets-id="436" href="#" class="w3-bar-item w3-button" onclick = "simvector()">Same Vector</a>
+    <a data-brackets-id="436" href="#" class="w3-bar-item w3-button" onclick = "simgoals()">Same Goals</a>
+    <a data-brackets-id="436" href="#" class="w3-bar-item w3-button" onclick = "smclub()">Same Clubs</a>
+    <a data-brackets-id="436" href="#" class="w3-bar-item w3-button" onclick = "ptclasses()">Potential Classes</a>
+    <a data-brackets-id="436" href="#" class="w3-bar-item w3-button" onclick = "mentors()">Mentors</a>
+    <a data-brackets-id="436" href="/messaging/index.html" class="w3-bar-item w3-button" >Messaging</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  <h1>Current Matches</h1>
+</div>
+    <div id="showData" class="responstable"></div>
+
+<div class="w3-container">
+
+</div>
+
+</div>
+
+
+</body>
+</html>

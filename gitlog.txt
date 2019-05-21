@@ -1,0 +1,892 @@
+commit ed6e86dade813f9216df4563a36e880555161e3e
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 16:18:01 2017 -0500
+
+    input
+
+commit 2ee3be858204ef0a0dcfb6aa9549b53ba94dedf2
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 16:16:27 2017 -0500
+
+    fixed alerts
+
+commit 4d23a2f075357bd593acb1dc684fa122ee56b3cf
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 16:08:46 2017 -0500
+
+    html tweaks
+
+commit 32992a11edc384a5f5a19c5fe25d6104514d90bb
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 15:50:54 2017 -0500
+
+    I think we're done guys
+
+commit edacdba4f103eb6f067c495fe754096f5956a3a4
+Merge: dfafba8 71805ee
+Author: so339 <so339@cornell.edu>
+Date:   Thu Dec 7 13:26:20 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit dfafba8983c0f1d31148fe4e5ac173e1dbdc362f
+Author: so339 <so339@cornell.edu>
+Date:   Thu Dec 7 13:25:53 2017 -0500
+
+    deleted websites folder
+
+commit 71805eea4798171616cc69fe2d3319f2cd2e81c8
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 13:22:32 2017 -0500
+
+    removed unnecessary html
+
+commit ef6a4df084ceb86db0279476d391b22cfba98323
+Merge: d0efb2d 4a80270
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Thu Dec 7 13:18:03 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    
+    merging with Sooyoun's updates
+
+commit d0efb2d900bb50428de0cd27eae85d749a91c976
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Thu Dec 7 13:17:24 2017 -0500
+
+    clenain up code and finishing specs
+
+commit 4a80270c0a30749ad524ddb061b9575efa5faf22
+Author: so339 <so339@cornell.edu>
+Date:   Thu Dec 7 12:55:14 2017 -0500
+
+    this is actually clean
+
+commit 6492f08a104f665c03bab9817a852134c2bf1c65
+Author: so339 <so339@cornell.edu>
+Date:   Thu Dec 7 12:52:38 2017 -0500
+
+    cleaned up messaging folder
+
+commit 4d658948735e1e34662b08c4f3fc9e95f645ed89
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 09:22:02 2017 -0500
+
+    FULL CIRCLE BABY IT FREAKIN WORKS
+
+commit 4a8c47e4f4bc1e7db85cfe9fa7a56e2d186ed95d
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 09:05:43 2017 -0500
+
+    going to pull & merge
+
+commit e61c15f406af11eeeeefcdaf9958c7dfb3210480
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Thu Dec 7 08:55:25 2017 -0500
+
+    frontend finally works
+
+commit ada8ff2dfdae3afeec777704906068bb0cb165f1
+Merge: 9ed6e85 1b5d55d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Dec 5 00:17:26 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    
+    merging with messages
+
+commit 9ed6e8586668d3071d5ea61edafe8299f74c3a2d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Dec 5 00:17:24 2017 -0500
+
+    WE WENT FULL CIRCLE
+
+commit 1b5d55dd0b4f44c88286d3e93e8592611c481838
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 23:26:37 2017 -0500
+
+    tried to automate sender_id in messages, could be bad
+
+commit 84183fafc1c4d9b45cbff6b081793fe699e9f3b7
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 22:36:27 2017 -0500
+
+    added to json from preuser in bot.ml
+
+commit b0d2d793f6f48466fa999276cd2e39febb838fc3
+Merge: 8e180d1 1338a42
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 21:59:05 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 8e180d1fa88e9418df193e550eb385ecd0a32a11
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 21:58:44 2017 -0500
+
+    pretty messaging ooohhhh
+
+commit 1338a425cb5cc66380958506fdc5317805c9c3c0
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 18:44:09 2017 -0500
+
+    all merges made- most updated code
+
+commit 5d115d17160ddad3e9845e8023ca91456a82e5f1
+Merge: ff5fe4f 986b79f
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 18:34:45 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    
+    merging changes from finding bugs
+
+commit ff5fe4ff5b1d3ebafb60ad20136ee92b0e09629e
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 18:34:43 2017 -0500
+
+    changes to stuff
+
+commit 986b79fdea3478301ee959e44ffd335586fda737
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 18:32:45 2017 -0500
+
+    modified recommender to improve specs
+
+commit d1e7f26d907f2e5d005255e2275c286affeb37f9
+Merge: ff4308c 02586a5
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 15:32:07 2017 -0500
+
+    updating Make
+
+commit ff4308cffaa2293b499425ca23316d62ca63faf4
+Merge: 79521a4 e6587b4
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 15:30:49 2017 -0500
+
+    BOT WORKS YEAH
+
+commit 02586a5204883901c888af2ce7ef51fb966f2f8e
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 15:25:04 2017 -0500
+
+    made everything compile by adding in 'open'
+
+commit 6031fdb7f7b49add6c9d9a6ce80ebe94a692ebc3
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 14:57:18 2017 -0500
+
+    deleted empty json
+
+commit 79521a4742f204926bc09ff6315de6687008b78b
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 04:12:19 2017 -0500
+
+    struggling with functors
+
+commit e6587b485717a64ec1465a583363ade0c246d39f
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 03:44:21 2017 -0500
+
+    finished up UI for messages yay
+
+commit 2e0bee3d1edd0d25a6c96df49f3cc2851d2b3412
+Merge: 141f638 dad90ec
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 02:28:07 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    resolving merge conflicts
+
+commit 141f6380bc051af21e904127886dbbbf6517b52d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Dec 4 02:28:05 2017 -0500
+
+    finished bot
+
+commit dad90ec0e8166a8e905016b00bf08ddd498459bd
+Author: so339 <so339@cornell.edu>
+Date:   Mon Dec 4 01:43:48 2017 -0500
+
+    Got the UI for messages mostly working
+
+commit d4ee5c342f4f5a6887d83b12ce1eb1adda42cffe
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Mon Dec 4 01:42:01 2017 -0500
+
+    deleted weird cornell website
+
+commit a511893c88b1228c1804483810f4ab1fb0c45ff2
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Mon Dec 4 01:27:40 2017 -0500
+
+    full circle
+
+commit 1175a0ef762141781921a64c2760dd400771eb71
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Mon Dec 4 00:21:12 2017 -0500
+
+    compiles
+
+commit 4a3efff2932b7bbd6a60fdbd69e0d56ac6d743e8
+Merge: 68cd1b3 a84d435
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sun Dec 3 23:08:38 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 68cd1b36a505ec41c07483fe149b53c366a5a446
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sun Dec 3 23:08:32 2017 -0500
+
+    trying to pull
+
+commit a84d435526f45c1947db04baf8bb34b23d33f5bf
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 23:06:57 2017 -0500
+
+    changes finally yeay
+
+commit 40d0b39ca9f3195cb62643c3f9126de38c075e3c
+Merge: 277f5e8 dbb14d7
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 22:41:09 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    xommits for chris
+
+commit 277f5e837bb6e9464fdd622d9ee5507ebd0e6db2
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 22:41:03 2017 -0500
+
+    changes for chris
+
+commit dbb14d71d20de7bb7b7f639294f2bf61ba931cac
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sun Dec 3 18:53:38 2017 -0500
+
+    make msg in makefile
+
+commit d7bfc6c1d26f64500da47945253d75f5256db49d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 18:47:36 2017 -0500
+
+    deleting unnecessary
+
+commit 036302b3ba87d3df5bfc70c323fe31084b1944f3
+Merge: 88b367f 855a657
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 18:41:17 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    
+    merging stuff
+
+commit 88b367f142ad3044785b124a2e21a05a442c5a5d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 18:41:07 2017 -0500
+
+    cleaning code, fixing specs
+
+commit 855a6576cdcd49b8b8e4f61dbd2b841ecbf674bf
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sun Dec 3 17:14:05 2017 -0500
+
+    attempting to get I/O in ajax
+
+commit a20333e4bd8e5d6207c85c11562ab8ca942908e0
+Merge: c783896 ef81cc5
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 17:11:03 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    fixed circular dependencies
+
+commit c783896636a1fa2eed41934d0b9663394ddce772
+Merge: 84f964c 310b37e
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 17:10:59 2017 -0500
+
+    fixed CIRUCLAR DEPENDENCIES
+
+commit ef81cc5ac8629d1914becf2106c1fd6a7f1ad483
+Merge: c2f5f2e 310b37e
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 16:23:13 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit c2f5f2edc07fbf54d0434d3f0514a469a946f350
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 16:22:51 2017 -0500
+
+    added print_endline to messages
+
+commit 84f964c15b6b8c6f857c25cbb0b9139c952eb399
+Merge: 41613b6 6775e01
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 16:16:20 2017 -0500
+
+    this is garbage
+
+commit 310b37ed9d57b514abf187eb391d972ffdb40938
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 16:01:50 2017 -0500
+
+    changes but still have circular dependencies
+
+commit 5ee3879caa151592060f9f6bf53ab36e9f8ff192
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 14:34:24 2017 -0500
+
+    THIS COMPILES FOR SURE!!!! Also need json in THIS format
+
+commit 41613b60cbf570e2b191480d48ddd334aaf010be
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 13:31:28 2017 -0500
+
+    going through changes
+
+commit aa1cfe94808318b61199363efb63442bdfc1eb87
+Merge: cf53ce0 b835d22
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 13:30:43 2017 -0500
+
+    do not pull this code
+
+commit 6775e01e26f8a1af4a667c4de1a9166a884d9263
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 13:18:14 2017 -0500
+
+    Maybe fixed finalproject so it compiled
+
+commit 9dfb8efc3a7c2308a1ece1f632c8b21e31793264
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sun Dec 3 04:19:23 2017 -0500
+
+    php runs ocaml & prints output w/ajax - make sure ocaml gives proper output (Sys.argv).
+
+commit cf53ce02418454f63e79dfe83e62ca78b4d2647b
+Merge: 744076f 83fbeea
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 04:15:38 2017 -0500
+
+    changersda
+
+commit b835d22516aab5743973596421b33b7defc297ac
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 04:11:15 2017 -0500
+
+    trying to fix json parsing
+
+commit 173269d7c15070c5e06e988efe76b73c728974b8
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 03:23:55 2017 -0500
+
+    removing circular dependencies
+
+commit 2d4e7b92c26ae54bb3d63efa3e7006bed18cb820
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 01:50:36 2017 -0500
+
+    improved tests
+
+commit d2e456f867a56cd899b81042411a2151433aae85
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 01:44:32 2017 -0500
+
+    THIS COMPILESgit add parser.mlgit add parser.ml
+
+commit d49e80162964371aa27c956658a848cd95460793
+Merge: 5678996 745dfe5
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 01:30:53 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 567899672819146da0373930571526657c5f5b40
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 01:30:29 2017 -0500
+
+    changed types of preuser and empty string ratings
+
+commit 745dfe59946eeea07706e715a61f29c6ce545efd
+Merge: 01e7153 22b545e
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 01:12:24 2017 -0500
+
+    Merge branch 'master' of
+    https://github.coecis.cornell.edu/sec295/finalproject
+    
+    getting gserver changes
+
+commit 01e7153f00d1ab0c4a5f11029b9f5905eefe6b8d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Dec 3 01:12:20 2017 -0500
+
+    finished mli for recommender
+
+commit 22b545e6ba52c81f8054aea400032554ff9ea66c
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 00:54:09 2017 -0500
+
+    fixed gserver getting the last-made user
+
+commit 744076f9a32e8f9ce85be17a89886fa117a5d304
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 00:33:33 2017 -0500
+
+    nothing
+
+commit 07bacdf41fa47b9ac90db09dcd3a0f17f1df49e3
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sun Dec 3 00:32:32 2017 -0500
+
+    nothign
+
+commit 83fbeea7872d4c6fd3722e246b68e7e9e1eef7f2
+Author: so339 <so339@cornell.edu>
+Date:   Sun Dec 3 00:23:44 2017 -0500
+
+    fixed gserver parsing into a preuser
+
+commit 02cb0d0cb77fbca556497519a2511025930310f8
+Merge: 7fe2821 77e1e87
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 23:45:22 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 7fe2821d917b450df0206030274da2a32abfe02d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 23:45:20 2017 -0500
+
+    adding stuff for parsing json
+
+commit 77e1e87253386194f0f41bd1ef6dd03cdb813ee0
+Author: so339 <so339@cornell.edu>
+Date:   Sat Dec 2 23:37:46 2017 -0500
+
+    added unit tests
+
+commit 5480fe074972c599c8a01ed76bcd193ec2914c95
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 23:13:02 2017 -0500
+
+    editing users
+
+commit 15d2dddc58e9381f821a0f108f8dbe3e0c6b8aab
+Merge: b34fb31 9d0c71b
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 21:38:10 2017 -0500
+
+    Merge branch 'master' of
+    https://github.coecis.cornell.edu/sec295/finalproject
+    merging stuff
+
+commit b34fb318c709e0c176fe9529e6b088801247cce4
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 21:38:08 2017 -0500
+
+    finishing set stuff
+
+commit 9d0c71b507b871def90b2497a4c7fb8ff0021679
+Author: so339 <so339@cornell.edu>
+Date:   Sat Dec 2 17:31:59 2017 -0500
+
+    added specs to messages.ml
+
+commit f010d0a86522ec9fe0884080598fb17b52cf3c9c
+Author: so339 <so339@cornell.edu>
+Date:   Sat Dec 2 16:25:18 2017 -0500
+
+    made empty messages meaningless in messages.ml
+
+commit 7fc554e26c557d5a80eba8921b2f5a4a27a68c6d
+Author: so339 <so339@cornell.edu>
+Date:   Sat Dec 2 16:05:43 2017 -0500
+
+    cleaned up messages.ml
+
+commit a6441356ddb5f2b5c76e343f590cba2f8389fb0c
+Author: so339 <so339@cornell.edu>
+Date:   Sat Dec 2 15:59:47 2017 -0500
+
+    added groupchat functionality
+
+commit 9da632e25f1c9a069ca7f8cd9d2f8ed5284506d1
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 04:45:23 2017 -0500
+
+    users -> JSON
+
+commit 6d7eee84eb34355266c6531f9a027e6c4cb13138
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Sat Dec 2 02:05:48 2017 -0500
+
+    added specs to messages.ml
+
+commit bda97eab183e670b11da2294fffd9cbeb1f10a91
+Merge: 8f86020 b8c6765
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sat Dec 2 01:20:28 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    simple commits on makefile
+
+commit 8f860203b8a2575b8b97ef50746098b6c687b74f
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sat Dec 2 01:20:25 2017 -0500
+
+    better makefile
+
+commit b8c67658ec25df4dcbe89032c565819eda738531
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 01:00:23 2017 -0500
+
+    starting testing
+
+commit 74105510773130cde88f30af59163b2f13b204bc
+Merge: 52db96a e4acf0d
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sat Dec 2 00:12:45 2017 -0500
+
+    parser.ml
+
+commit 52db96a9a901c6895e20d4323893a65920022252
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Sat Dec 2 00:11:09 2017 -0500
+
+    parser and server
+
+commit e4acf0d18ea823a2a04471033a75c54ebab4bed4
+Merge: 3465baa b30a7b3
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sat Dec 2 00:09:11 2017 -0500
+
+    getting back code
+
+commit 3465baa314fb58cd473ad0af90b30ff0267c67df
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Fri Dec 1 23:46:33 2017 -0500
+
+    recommender edits
+
+commit b30a7b36ed6107de2aaf53fd659db5830940ba82
+Author: so339 <so339@cornell.edu>
+Date:   Fri Dec 1 19:41:38 2017 -0500
+
+    added function to display 5 more
+
+commit fd7aa2cd003ddf064ba94754cc06c0a242bdd0fc
+Author: so339 <so339@cornell.edu>
+Date:   Fri Dec 1 19:21:16 2017 -0500
+
+    got json version working, gonna add display_more fcn
+
+commit 3d2af626b8d93de66699ec5f2caad00c55de6186
+Author: so339 <so339@cornell.edu>
+Date:   Fri Dec 1 04:34:32 2017 -0500
+
+    almost working messages with JSONs
+
+commit ff3134450c3d424cdb979ed645c627742f958076
+Merge: ea28e51 fc37ee0
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Fri Dec 1 04:08:35 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    it's 4am
+
+commit ea28e5165de00250db4967f540dcf22cdd895f38
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Fri Dec 1 04:08:05 2017 -0500
+
+    implementing vectors
+
+commit fc37ee0d05d2833a5f56f892d03374bbd8c28071
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Fri Dec 1 04:07:16 2017 -0500
+
+    got message in working via UI
+
+commit 2c1ab97e769ba1082ecefa2d5b447dbfe6bc2bdd
+Author: so339 <so339@cornell.edu>
+Date:   Thu Nov 30 02:14:04 2017 -0500
+
+    added basic messaging ocaml code
+
+commit 5def6099e7b3232158152af7a345950bb5b629c7
+Merge: 5ca4916 c5229f4
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 30 00:50:36 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 5ca49165ded006f1824bc9dfaa19c43e3b6f4418
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 30 00:50:20 2017 -0500
+
+    updates to server and parser
+
+commit c5229f4f116f19069736eaad4477676814094c9e
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Thu Nov 30 00:48:35 2017 -0500
+
+    bot 80% done
+
+commit a6b35d98969255ad71aafaee54b96b4cdbc978ec
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Wed Nov 29 21:18:12 2017 -0500
+
+    starting recommendations
+
+commit 61b643e65e44786c9f70edd47abff1a3cd96f291
+Author: so339 <so339@cornell.edu>
+Date:   Wed Nov 29 00:03:59 2017 -0500
+
+    added split in rbt
+
+commit c1db451735d99df055f6c5a52b49d30066ac5ba0
+Merge: dde90d0 fb1c527
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 21:48:17 2017 -0500
+
+    resolved conflicts
+
+commit dde90d0ccd65d02be478a6288e75af19bb1b187a
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 21:44:56 2017 -0500
+
+    rbt stuff
+
+commit fb1c52747bcd120769949a2cc56cf060fb60a6a1
+Merge: ed2eadb 4e1e9cf
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Tue Nov 28 21:44:14 2017 -0500
+
+    resolving merge
+
+commit ed2eadb0fedc15390b46a25b7b7be469084ba064
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Tue Nov 28 21:42:01 2017 -0500
+
+    possibly balanced split
+
+commit 4e1e9cfbfe6e44f40c871d6db9f390886cc9085d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 20:59:33 2017 -0500
+
+    now compiles
+
+commit b617e4618d87458e61b94fca995c6d5a0dcf2887
+Author: so339 <so339@cornell.edu>
+Date:   Tue Nov 28 14:16:37 2017 -0500
+
+    finished up join in rbt.ml and added getter helpers
+
+commit 9e23f6d7343d551e1977bd9c07b3941530545fea
+Merge: 7cdf2db 21059e0
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 13:42:12 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 7cdf2db48266613adf8ac76f05a8af0ebaf33c04
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 13:42:02 2017 -0500
+
+    removing bst, rbt updates
+
+commit 21059e02c0e001ef001e19213c573ae58012b92a
+Merge: 272e093 caaa4ce
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Tue Nov 28 00:36:03 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    integrating makefile changes
+
+commit ebe89d7b7223edc5fd1a74b4e358926ac00146fc
+Merge: 80f0695 caaa4ce
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 00:34:59 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    Merging rbt implementation
+
+commit 80f0695329874a1724198b0d16a94f02ee826d76
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 28 00:34:57 2017 -0500
+
+    working on rbt
+
+commit 272e093974b4cadaa87f485dab97ceadb43d396c
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Tue Nov 28 00:34:32 2017 -0500
+
+    make and create env
+
+commit caaa4ce7f5bf843f705c08cb4361ee8d9f1e2957
+Author: so339 <so339@cornell.edu>
+Date:   Tue Nov 28 00:25:34 2017 -0500
+
+    modified join in rbt
+
+commit 3f37b05c78a142949c539ff24ebc723582371775
+Author: so339 <so339@cornell.edu>
+Date:   Mon Nov 27 23:48:56 2017 -0500
+
+    added split in rbt
+
+commit bc2c4495f135eb815c8021f48e04e35e7ba823c3
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Nov 27 23:22:31 2017 -0500
+
+    rbt implementation started
+
+commit 7bbdbb9c0b086a985ec34a6931814ffc37ce567f
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Mon Nov 27 10:49:41 2017 -0500
+
+    work on trees
+
+commit d16d83c5353eed8e965bf3e02f080cde102e6aef
+Merge: 706d0a4 c21fa42
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Nov 26 18:42:45 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    getting makefiles
+
+commit 706d0a48b7a3168e4a1d1c73fbedee88275ac5eb
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Nov 26 18:42:41 2017 -0500
+
+    changes to make users
+
+commit c21fa42f1d2232c3d1400a46f6700ed862d46688
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Fri Nov 17 11:49:36 2017 -0500
+
+    implement the basic modules through a bash script
+
+commit a338a6276ed41515d942e37928a7ca717b593992
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 16 19:53:56 2017 -0500
+
+    slight fixes in test to allow for printing in json encoding
+
+commit 0cdf7f95e3f221ed422564ff61a5ada8d67952cd
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 16 19:51:54 2017 -0500
+
+    adding a php and an updated Makefile
+
+commit bf200dd6a0969688ac27b5867ef1b0273e25d232
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 16 18:34:25 2017 -0500
+
+    started putting skeleton files for our website
+
+commit cf5e45d1035b3ef3203733e59fee22885aa31a7f
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Thu Nov 16 12:30:40 2017 -0500
+
+    new .merlin and makefiles to make compiling and executing easily
+
+commit fcca13dfe16365ab3c4c029a6e6fb22c1c2a205a
+Merge: d398d04 ed91c2d
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Wed Nov 15 22:21:44 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+    
+    resolving merge conflicts
+
+commit d398d0488e54f29a46ed994f54d6b2d53c076462
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Wed Nov 15 22:21:41 2017 -0500
+
+    final changes to .mli
+
+commit ed91c2d44605054864324ef0e2d5f8d9c54ce1e6
+Author: so339 <so339@cornell.edu>
+Date:   Wed Nov 15 22:12:13 2017 -0500
+
+    finalized users.mli except for preuser
+
+commit f81e9d8c0830252e1b86d5d6b49d5b13d8b9289a
+Merge: b2dadf9 a6b3d43
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Wed Nov 15 20:52:30 2017 -0500
+
+    resolving conflicts
+
+commit b2dadf9ffeeaf0068833c8c1f58dc08f648d00ae
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Wed Nov 15 20:36:57 2017 -0500
+
+    changes to almost all files
+
+commit a6b3d43191682abcecba96ba7f9d9863136d3995
+Merge: 27e4e19 09c6512
+Author: John Paul Trujillo <jpt86@cornell.edu>
+Date:   Wed Nov 15 20:33:58 2017 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/sec295/finalproject
+
+commit 27e4e1935d4e6c55e47b7e5312733adccfbe1087
+Author: johnphipps4 <NeoTrox@dhcp-hol-6150.redrover.cornell.edu>
+Date:   Wed Nov 15 20:33:05 2017 -0500
+
+    added the server.mli and parse.mli files
+
+commit 09c6512de09544cf528ca53c3a9e8dc5158f12a7
+Merge: 5da6ea9 f646d05
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 14 22:43:35 2017 -0500
+
+    fixed conflicts in merge
+
+commit 5da6ea9482e297cfefa664b316d1b370e69e4e32
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 14 22:40:27 2017 -0500
+
+    fixed elt in posts and changed names in users
+
+commit f646d05cd1d66bcf1e6e36c0d63f9cdd37a01a60
+Author: so339 <so339@cornell.edu>
+Date:   Tue Nov 14 22:33:59 2017 -0500
+
+    changed standing to year in users.mli
+
+commit 0abddef37837c3f41c2673aa948f0f2c5f8cdb87
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Tue Nov 14 22:25:11 2017 -0500
+
+    working on recommender
+
+commit 53328e8481f8a202d202eb64cda5e9e3e1bb6667
+Author: so339 <so339@cornell.edu>
+Date:   Tue Nov 14 14:29:00 2017 -0500
+
+    Added basic val skeletons to users.mli
+
+commit 342ec660fee89964ac82f8ae75ccd06e4dcac99c
+Author: Chris Pardee <csp73@cornell.edu>
+Date:   Tue Nov 14 00:45:06 2017 -0500
+
+    Added a lot to posts.mli and a bit to users.mli
+
+commit 86461335873179e1dd914058ba6c0d875b49c7e7
+Author: Sofia Carrillo - sec295 <sec295@cornell.edu>
+Date:   Sun Nov 12 22:57:00 2017 -0500
+
+    initial push of .mli files
+
+commit 761fe17ba198c73d5bf9a67bb0b74cce2888ef31
+Author: Sofia Elena Carrillo <sec295@cornell.edu>
+Date:   Sun Nov 12 21:29:28 2017 -0500
+
+    Initial commit

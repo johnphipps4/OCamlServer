@@ -1,0 +1,62 @@
+xs<!DOCTYPE html>
+<html>
+<?php
+
+?>
+<head>
+  <meta charset="UTF-8">
+  <title>Messaging Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600'
+                                           rel='stylesheet' type='text/css'>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<br><h1>Messages</h1></a>
+<div><a href= '../recommendations.html'><h2 style='text-align:center'>Go Back to Recommendations</h2></div>
+</a></a>
+
+<body style= "background: #262626;
+		background-repeat: no-repeat; background-size:cover ">
+
+    <header style="height: 100px; background: #262626">
+
+	</header>
+  <form action="messaging.php" method="post">
+  <table style="width:75%" align="center">
+    <tr align="center">
+      <th><label><span style="color:white">Recipient Username (if you want to message a group, separate the usernames with ", "): </span></label></th>
+    </tr>
+    <tr align="center">
+      <td><input type="text" name="recip_id"></td>
+    </tr>
+    <br><br>
+    <tr align="center">
+      <th><label><span style="color:white">Message: </span></label></th>
+    </tr>
+    <br>
+    <tr align="center">
+      <td><input type="text" name="msg"></td>
+    </tr>
+  </table>
+    <br>
+  <table style="width:75%" align="center">
+    <tr align="center">
+      <td>
+        <input type="submit" name="Send Message" value="Send Message">
+      </td>
+      <td>
+        <input type="submit" name="Get Previous 5 Messages"
+                value="Get Previous 5 Messages">
+      </td>
+    </tr>
+  </table>
+  <br><br>
+
+    </form>
+
+</div>
+	</div>
+
+</body>
+</html>
